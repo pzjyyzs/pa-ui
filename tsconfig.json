@@ -16,6 +16,14 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "pa": [
+        "pa/index.ts"
+      ],
+      "pa/*": [
+        "pa/*"
+      ]
+    },
     "target": "es2020",
     "module": "es2020",
     "lib": [
