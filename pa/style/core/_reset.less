@@ -1,0 +1,52 @@
+@import '_font';
+
+body {
+  margin: 0;
+  padding: 0;
+  /* color: $devui-text;
+  font-size: $devui-font-size; */
+  font-family: @font-family;
+  /* line-height: $devui-line-height-base; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: 0;
+  -webkit-appearance: button;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  text-decoration: none;
+}

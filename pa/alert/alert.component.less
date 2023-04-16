@@ -1,16 +1,36 @@
-.dev-alert {
-  border: 1px solid transparent;
-  padding: 8px 16px;
+@import '../style/theme/_basic';
+@import '../style/theme/_corner';
+@import '../style/theme/_font';
+
+:host {
+  display: block;
+}
+
+.pz-alert {
+  color: @pzui-black-5;
+  padding: 16px;
+  margin: 16px;
+  border-radius: @paui-border-radius;
   line-height: 24px;
-  border-radius: 4px;
-  word-break: normal;
-  word-wrap: break-word;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: @pzui-font-size-page-title;
 
-  .dev-close {
-    color: red;
+  &.info {
+    background-color: @pz-alert-info;
   }
 
-  .icon-info {
-    color: red;
+  &.positive {
+    background-color: @pz-alert-positive;
   }
+
+  &.warning {
+    background-color: @pz-alert-warning;
+  }
+
+  &.negative {
+    background-color: @pz-alert-negative;
+  }
+
 }

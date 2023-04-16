@@ -1,5 +1,5 @@
-<div class="dev-alert {{ type }} " *ngIf="!hide">
-  <button type="button" class="dev-close" (click)="close()" *ngIf="closeable"></button>
-  <span class="dev-alert-icon icon-{{ type }}" *ngIf="showIcon"></span>
+<div class="pz-alert {{ type }} " *ngIf="!hide">
+  <button type="button" class="pz-close" (click)="close()" *ngIf="closeable"></button>
+  <span class="pz-alert-icon icon-{{ type }}" *ngIf="showIcon"></span>
   <ng-content></ng-content>
 </div>

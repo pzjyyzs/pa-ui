@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
-export type AlertType = 'success' | 'danger' | 'warning' | 'info';
+export type AlertType = 'positive' | 'negative' | 'warning' | 'info';
 
 @Component({
   selector: 'p-alert',
